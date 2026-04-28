@@ -41,10 +41,15 @@
         После этого счётчик нажатий увеличивается на 1.
     */
 
-    if (isset($_GET['key'])) {
+if (isset($_GET['key'])) {
+    if ($_GET['key'] == 'reset') {
+        $_GET['store'] = '';
+    } else {
         $_GET['store'] .= $_GET['key'];
-        $_GET['count']++;
     }
+
+    $_GET['count']++;
+}
 
     $store = $_GET['store']; // Сохраняем текущее значение результата в отдельную переменную для удобства.
     $count = $_GET['count']; // Сохраняем количество нажатий в отдельную переменную для удобства.
@@ -120,7 +125,7 @@
         ?>
     </div>
     <!-- Сброс открывает страницу без GET-параметров, поэтому результат очищается. -->
-    <a class="reset" href="index.php">СБРОС</a>
+    <a class="reset" href="?key=reset&store=<?php echo htmlspecialchars($store); ?>&count=<?php echo $count; ?>">СБРОС</a>
 </main>
 
 <footer>
