@@ -1,0 +1,148 @@
+/* ============================================================
+   Стили для ЛР7
+   Оформляют форму ввода, массивы, итерации и сообщения.
+   ============================================================ */
+
+/* Общие настройки страницы */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #222;
+}
+
+/* Основной белый блок страницы */
+.page {
+    width: 900px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+/* Небольшая подсказка под заголовком */
+.hint {
+    background: #eef6ff;
+    border-left: 4px solid #2196F3;
+    padding: 10px;
+}
+
+/* Таблица с полями ввода элементов массива */
+.input-table {
+    margin: 15px 0;
+    border-collapse: collapse;
+}
+
+.input-table td {
+    padding: 6px;
+}
+
+/* Номер элемента массива слева от поля */
+.element_index {
+    width: 35px;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ячейка с полем ввода */
+.element_row input {
+    width: 250px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+/* Строка с селектором алгоритма */
+.form-row {
+    margin: 15px 0;
+}
+
+.form-row label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+}
+
+/* Кнопки */
+.buttons {
+    margin-top: 15px;
+}
+
+input[type="button"],
+input[type="submit"] {
+    padding: 9px 15px;
+    margin-right: 10px;
+    border: 1px solid #000;
+    background: #1976d2;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+    background: #125aa0;
+}
+
+/* Отдельный элемент массива при выводе */
+.arr_element {
+    display: inline-block;
+    margin: 4px;
+    padding: 6px 10px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Блок одной итерации сортировки */
+.iteration {
+    margin: 10px 0;
+    padding: 10px;
+    background: #e8f4f8;
+    border-left: 4px solid #2196F3;
+}
+
+/* Номер итерации */
+.iteration-num {
+    font-weight: bold;
+    color: #1565c0;
+}
+
+/* Пояснение к итерации */
+.iteration-message {
+    margin-left: 10px;
+    color: #444;
+}
+
+/* Предупреждение об ошибке */
+.warning {
+    margin: 12px 0;
+    padding: 12px;
+    background: #ffeeee;
+    border: 1px solid red;
+    color: red;
+    font-weight: bold;
+}
+
+/* Сообщение об успешной проверке или завершении */
+.success {
+    margin: 12px 0;
+    padding: 12px;
+    background: #eefbea;
+    border: 1px solid green;
+    color: green;
+    font-weight: bold;
+}
+
+/* Разделительная линия */
+hr {
+    margin: 20px 0;
+}
